@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/b33593c9e3.js" crossorigin="anonymous"></script>
+    <title>Task-list
+    </title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div id="main" class="card">
+                <div class="card-content">
+                    <span class="card-title">Task list</span>
+                    <div class="row">
+                        <form  id="task-form">
+                            <div class="input-field col s12">
+                            <input type="text" name="task" id="task">
+                            <label for="task"> New Task</label>
+                            </div>
+                            <input type="submit" value="add-task" class="btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <h5 id="task-title">Tasks</h5>
+                    <div class="input-field col s12">
+                        <input type="text" name="filter" id="filter">
+                        <label for="filter"> Filter Task</label>
+                        </div>
+                        <ul class="collection"></ul>
+                        <a href="#" class="clear-tasks btn black"> Clear Tasks</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
